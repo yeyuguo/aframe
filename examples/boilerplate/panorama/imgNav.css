@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.imgNav {
+  margin-left: 30px;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 5%;
+  width: 70%;
+  padding: 10px;
+  height: 120px;
+  border: 1px solid #161418;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  overflow: hidden;
+}
+.imgNav > * {
+  float: left;
+}
+.imgNav > a {
+  display: block;
+  width: 2%;
+  height: 100px;
+  background-size: 100% 50px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.imgNav > a.imgPre {
+  background-image: url('images/arrow-left.png');
+}
+.imgNav > a.imgNext {
+  background-image: url('images/arrow-right.png');
+}
+.imgNav .imgShow {
+  position: relative;
+  height: 100px;
+  width: 95%;
+  overflow: hidden;
+}
+.imgNav ul {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+.imgNav li {
+  float: left;
+  width: 24%;
+  height: 100px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.imgNav li > a {
+  height: inherit;
+  width: inherit;
+}
+.imgNav li img {
+  height: inherit;
+  width: 100%;
+}

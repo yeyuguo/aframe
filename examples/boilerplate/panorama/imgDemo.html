@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Panorama</title>
-    <meta name="description" content="Panorama — A-Frame">
-    <script src="../../../dist/aframe-master.js"></script>
-    <!--self-->
+    <title></title>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <script src='./jquery.3.1.1.js'></script>
     <link rel="stylesheet/less" type="text/css" href="./imgNav.less">
     <script src="less2.7.1.min.js"></script>
 </head>
 
 <body>
-    <a-scene>
-        <!--<a-sky src="puydesancy.jpg" rotation="0 -130 0"></a-sky>-->
-
-        <a-sky src="test2.jpg" rotation="0 -130 0"></a-sky>
-
-
-    </a-scene>
     <div class='imgNav'>
         <a href="#" class='imgPre'></a>
         <div class="imgShow">
             <ul>
                 <li>
                     <a href="#">
-                        <img src="./test0.jpg" alt="">
+                        <img src="./test2.jpg" alt="">
                     </a>
                 </li>
                 <li>
@@ -41,12 +32,12 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./test3.jpg" alt="">
+                        <img src="./test1.jpg" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./test0.jpg" alt="">
+                        <img src="./test2.jpg" alt="">
                     </a>
                 </li>
                 <li>
@@ -57,8 +48,10 @@
 
             </ul>
         </div>
+
         <a href="#" class='imgNext'></a>
     </div>
+
     <script>
         $(function() {
 
@@ -73,7 +66,7 @@
 
         function objMove(moveTag) {
             var moveWidth = $('.imgShow').find('li').eq(0).css('width');
-            // console.loghtml({
+            // console.log({
             //     moveWidth
             // })
             if (moveTag == 'left') {
@@ -103,7 +96,6 @@
                 console.log({
                     imgSrc
                 })
-                $('a-sky').attr('src', imgSrc)
                 var paramsObj = {
                     imgSrc,
                 }
